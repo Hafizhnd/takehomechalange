@@ -30,17 +30,16 @@ The app is built using Clean Architecture principles and Provider as the state m
 - flutter_launcher_icons (App Icon Customization)
 
 ## Project Structure :
-lib/
-├── core/                # Constants, error handling
-├── data/                # Data sources & repository implementation
-│   ├── datasources/     # Remote & local data sources
-│   ├── models/          # API response models
-│   └── repositories/    # Repository implementation
-├── domain/              # Entities & repository contracts
-├── presentation/        # UI (pages, widgets, providers)
-│   ├── pages/           # Home, Search, Detail, Favorites
-│   └── providers/       # State management (Home, Detail, Favorites, Search)
-└── main.dart
+* `core` → Constants, error handling  
+* `data` → Data sources & repository implementation  
+  * `datasources` → Remote & local data sources  
+  * `models` → API response models  
+  * `repositories` → Repository implementation  
+* `domain` → Entities & repository contracts  
+* `presentation` → UI (pages, widgets, providers)  
+  * `pages` → Home, Search, Detail, Favorites  
+  * `providers` → Home, Detail, Favorites, Search  
+* `main.dart` → App entry point  
 
 ## APK Link :
 [Download APK](https://drive.google.com/file/d/1XBO5zLKVTXZ_bLOfkzw-y1n8H1XhNgl9/view?usp=sharing)
