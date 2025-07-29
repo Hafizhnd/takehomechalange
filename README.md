@@ -21,7 +21,7 @@ The app is built using Clean Architecture principles and Provider as the state m
 - Unit tests using Mockito (3 test cases for provider & repository)
 
 ## Libraries :
-- Flutter (version X.X.X)
+- Flutter (version 3.32.6)
 - Provider (State Management)
 - http (API Client)
 - sqflite (Local Database)
