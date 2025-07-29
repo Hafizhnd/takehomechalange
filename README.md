@@ -1,16 +1,46 @@
-# takehomechalange
+# Rick & Morty Flutter App
 
-A new Flutter project.
+## Introduction :
+A Flutter application that uses the Rick and Morty API to display a list of characters, their details, and allows users to search and save favorite characters.  
+The app is built using Clean Architecture principles and Provider as the state management solution.
 
-## Getting Started
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Libraries](#libraries)
+- [Project Structure](#project-structure)
+- [APK Link](#apk-link)
 
-This project is a starting point for a Flutter application.
+## Features :
+- Display list of characters grouped by location
+- Show character detail page (name, species, gender, origin, location, image)
+- Search characters with real-time search (results update as user types)
+- Add or remove characters from favorites (stored in SQLite database)
+- Bottom navigation bar for Home, Search, and Favorites
+- Pagination with background loading for all characters
+- Unit tests using Mockito (3 test cases for provider & repository)
 
-A few resources to get you started if this is your first Flutter project:
+## Libraries :
+- Flutter (version X.X.X)
+- Provider (State Management)
+- http (API Client)
+- sqflite (Local Database)
+- path_provider (For SQLite path)
+- mockito (Unit Testing)
+- flutter_launcher_icons (App Icon Customization)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Project Structure :
+lib/
+├── core/                # Constants, error handling
+├── data/                # Data sources & repository implementation
+│   ├── datasources/     # Remote & local data sources
+│   ├── models/          # API response models
+│   └── repositories/    # Repository implementation
+├── domain/              # Entities & repository contracts
+├── presentation/        # UI (pages, widgets, providers)
+│   ├── pages/           # Home, Search, Detail, Favorites
+│   └── providers/       # State management (Home, Detail, Favorites, Search)
+└── main.dart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## APK Link :
+[Download APK](https://drive.google.com/file/d/1XBO5zLKVTXZ_bLOfkzw-y1n8H1XhNgl9/view?usp=sharing)
